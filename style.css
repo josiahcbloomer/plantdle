@@ -190,6 +190,11 @@ body {
     inset: 0;
     background: #fff;
     text-align: center;
+  }
+  .nomobile h1 {
+    font-size: 60px;
+  }
+  .nomobile h2 {
     font-size: 30px;
   }
 }
