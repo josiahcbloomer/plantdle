@@ -99,8 +99,8 @@ function submitGuess() {
             winMsg.textContent = `We guessed the word "${word}" on the first try! Wait, how???`
         }
 
-        if (guessOn === wordlist.length - 1) {
-            winMsg.textContent += "\nGreat job! That's all for today!"
+        if (wordOn === wordlist.length - 1) {
+            winMsg.innerHTML += "<br>Great job! That's all for today!"
             nextButton.style.display = "none"
         }
     } else {
