@@ -92,6 +92,7 @@ function submitGuess() {
 
     if (typedSoFar === word) {
         winScreen.classList.add("active")
+        nextButton.disabled = false;
         if (guessOn >= 1) {
             winMsg.textContent = `We guessed the word "${word}" in ${guessOn + 1} guesses!`
         } else {
@@ -111,6 +112,7 @@ function submitGuess() {
 }
 
 function newGame(wordIndex = wordOn+1) {
+    nextButton.disabled = true;
     wordOn = wordIndex;
     wordCounter.value = wordOn+1;
 
