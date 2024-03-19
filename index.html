@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>What's In My Garden?</title>
+
+        <link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div class="wood">
+			<div class="board">
+				<div class="row"></div>
+			</div>
+		</div>
+        <div class="win-screen">
+            <div class="bg"></div>
+            <div class="main">
+                <img src="./plantastic-v1.svg" alt="Plantastic!">
+                <h2 class="win-msg">We guessed the word!</h2>
+                <br>
+                <br>
+                <button class="next-button" onclick="newGame()">Next Word</button>
+            </div>
+        </div>
+
+        <div class="bottom-controls">
+            Current word: <input type="number" min="1" max="12" id="word-on"> out of 12
+        </div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
